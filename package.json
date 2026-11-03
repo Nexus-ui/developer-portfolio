@@ -1,0 +1,32 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "Personal engineering portfolio showcasing **Software Engineering**, **Salesforce**, and **Agentic AI** projects.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nexus-ui/developer-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nexus-ui/developer-portfolio/issues"
+  },
+  "homepage": "https://github.com/Nexus-ui/developer-portfolio#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "astro": "^7.4.5",
+    "tailwindcss": "^4.3.4"
+  }
+}
