@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Astro build
+dist/
+.astro/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local tooling
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
