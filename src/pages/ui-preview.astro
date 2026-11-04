@@ -1,0 +1,85 @@
+---
+import "../styles/global.css";
+
+import Button from "../components/ui/Button.astro";
+import Badge from "../components/ui/Badge.astro";
+import Card from "../components/ui/Card.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Component Preview</title>
+  </head>
+
+  <body>
+    <main class="mx-auto max-w-5xl px-6 py-16">
+      <header class="mb-12">
+        <Badge variant="primary">DESIGN SYSTEM V1</Badge>
+
+        <h1 class="mt-4 text-4xl font-bold text-foreground">
+          UI Component Preview
+        </h1>
+
+        <p class="mt-3 text-muted">
+          Testing reusable components for the developer portfolio.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="mb-6 text-2xl font-semibold">Buttons</h2>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <Button href="/projects" variant="primary"> Explore Projects </Button>
+
+          <Button href="https://github.com/Nexus-ui" variant="secondary">
+            View GitHub
+          </Button>
+
+          <Button variant="primary" disabled> Disabled Button </Button>
+
+          <Button variant="secondary" size="sm"> Small Button </Button>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="mb-6 text-2xl font-semibold">Badges</h2>
+
+        <div class="flex flex-wrap gap-3">
+          <Badge>TypeScript</Badge>
+          <Badge variant="primary">Salesforce</Badge>
+          <Badge variant="success">Completed</Badge>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="mb-6 text-2xl font-semibold">Cards</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <Card>
+            <Badge variant="primary">Salesforce</Badge>
+
+            <h3 class="mt-4 text-xl font-bold">Intelligent Case Routing</h3>
+
+            <p class="mt-3 text-muted">
+              A Salesforce solution using Apex, Lightning Web Components and
+              event-driven architecture.
+            </p>
+          </Card>
+
+          <Card>
+            <Badge variant="primary">Agentic AI</Badge>
+
+            <h3 class="mt-4 text-xl font-bold">Multi-Agent Assistant</h3>
+
+            <p class="mt-3 text-muted">
+              An intelligent agent orchestration system built with Python and
+              LangGraph.
+            </p>
+          </Card>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
