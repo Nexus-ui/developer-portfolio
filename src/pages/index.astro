@@ -1,8 +1,10 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
-const title = 'Developer Portfolio';
-const subtitle = 'Software Engineering | Salesforce | Agentic AI';
+const title = "Developer Portfolio";
+const subtitle = "Software Engineering | Salesforce | Agentic AI";
+
+const deploymentMessage = "Deployed automatically with Cloudflare Workers";
 ---
 
 <!doctype html>
@@ -15,13 +17,16 @@ const subtitle = 'Software Engineering | Salesforce | Agentic AI';
   <body>
     <main>
       <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-<h1 class="text-5xl font-bold text-cyan-400">
-  {title}
-</h1>   
-	<p>{subtitle}</p>
+      <h1 class="text-5xl font-bold text-cyan-400">
+        {title}
+      </h1>
+      <p>{subtitle}</p>
       <p class="description">
-        Building modern software solutions, Salesforce applications,
-        and intelligent AI systems.
+        Building modern software solutions, Salesforce applications, and
+        intelligent AI systems.
+      </p>
+      <p class="mt-6 text-sm text-emerald-400">
+        {deploymentMessage}
       </p>
       <a
         href="https://github.com/Nexus-ui"
